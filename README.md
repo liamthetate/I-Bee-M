@@ -1,6 +1,6 @@
 ![title](static/images/rm-logo.png)
 
-Live site: http://flask-task-manager-experiment.herokuapp.com/start
+Live site: http://i-bee-m.herokuapp.com/start
 
 Works best on Desktop & Tablet (or horizontal mobile).
 
