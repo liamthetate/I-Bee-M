@@ -107,17 +107,8 @@ def start():
 def welcome():
     progress_value = 0
     plant_database()
-
-    if request.method == "POST":
-        task = { #get all the values the user has typed
-            "task_name": request.form.get("task_name"),
-            "honey_production": request.form.get("honey_production"),
-            "health": request.form.get("health"),
-        }
-        mongo.db.tasks.insert_one(task) 
-        return redirect(url_for("get_tasks"))
-
-    return render_template('welcome_task.html', progress_value=progress_value)
+    return redirect(url_for("get_tasks", progress_value=progress_value))
+    #return render_template('welcome_task.html', progress_value=progress_value)
 
 
 #UI TASKS ORDERED
